@@ -1,4 +1,55 @@
-<label for="assignmentName">Assignment Name</label> <br />
+<table border="1" width="100%">
+    <tr>
+      <td valign="top">
+        <ul>
+          <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+          <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
+          <li><a href="/Kanbas/KanbasNavigation/Inbox/index.html">Inbox</a></li>
+          <li><a href="/Kanbas/KanbasNavigation/History/index.html">History</a></li>
+          <li><a href="/Kanbas/KanbasNavigation/Studio/index.html">Studio</a></li>
+          <li><a href="/Kanbas/KanbasNavigation/Commons/index.html">Commons</a></li>
+          <li><a href="/Kanbas/Courses/Home/screen.html">Help</a></li>
+        </ul>
+      </td>
+      <td valign="top">
+        <ul>
+          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+          <li><a href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Zoom Meetings</a></li>
+          <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/index.html">Assignments</a></li>
+          <li><a href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
+          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+          <!-- These are some dummy links not fully implemented:<br/> -->
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">People</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Panopto Video</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Discussion</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Announcements</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Pages</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Files</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Rubrics</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Outcomes</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Collaborations</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Syllabus</a></li>
+          <li><a href="/Kanbas/Courses/Piazza/screen.html">Settings</a></li>
+        </ul>
+      </td>
+      <td>
+
+<select id="edit-assignment-details">
+    <option>Speed Grader</option>
+    <option>Duplicate</option>
+    <option>Delete</option>
+    <option>Move To...</option>
+    <option>Send To...</option>
+    <option>Copy To...</option>
+    <option>Share to Commons</option>
+</select><br/>
+<hr width="25%" align="left">
+
+<h3><label for="assignmentName">Assignment Name</label> </h3>
 <input
   type="text"
   value="Assingment 1 - HTML"
@@ -13,31 +64,66 @@ This is the first assignment to build Kanbas
 <h3>Points</h3>
 <input value="100" type="number" max="100" min="50" step="5" />
 
+<h3>Assignment Group</h3>
+<select id="edit-assignment-group">
+    <option>ASSIGNMENTS</option>
+    <option>QUIZZES</option>
+    <option>EXAMS</option>
+    <option>PROJECT</option>
+</select><br/>
+
+<h3>Display Grade as</h3>
+<select id="display-grade-as">
+    <option>Percentage</option>
+    <option>Numeric</option>
+</select><br/>
+
 <h3>Submission Type</h3>
-<input type="checkbox" id="textEntry" />
-<label for="textEntry">Text Entry</label><br />
-<input type="checkbox" checked /> Website URL <br />
+<select id="submission-types">
+    <option selected value="Online">Online</option>
+</select>  
 
-<label> <input type="checkbox" /> Media Recordings </label> <br />
-
+<h3>Online Entry Options</h3>
+<input type="checkbox" /> Text Entry<br />
+<input type="checkbox" /> website URL<br />
+<input type="checkbox" /> Media Recordings<br />
+<input type="checkbox" /> Student Annotation<br />
 <input type="checkbox" /> File Uploads<br />
 
-<h3>Favorite Music Genre</h3>
-<input type="radio" name="genre" /> Rock <br />
-<input type="radio" name="genre" checked /> Pop <br />
-<input type="radio" name="genre" /> Country <br />
-<input type="radio" name="genre" /> Hip Hop <br />
+<h3>Submission Attempts</h3>
+<select id="submission-attempts">
+    <option selected value="unlimited">Unlimited</option>
+</select>  
 
-<h3>Favorite Movie Genre</h3>
-<input type="radio" name="movie" /> Action <br />
-<input type="radio" name="movie" /> Comedy <br />
-<input type="radio" name="movie" checked /> Drama <br />
-<input type="radio" name="movie" /> Horror <br />
+<h3>Plagiarism Review</h3>
+<select id="plagiarism-review">
+    <option selected value="has">Has</option>
+    <option selected value="none">None</option> 
+</select>  
 
-<h3>Due Date</h3>
-<input type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" />
+<h3>Group Assignment</h3>
+<input type="checkbox" /> This is a group assignment<br />
 
-<h3>Other</h3>
-<input type="color" value="#ff0000" />
-<input type="email" />
-<input type="tel" />
+<h3>Peer Reviews</h3>
+<input type="checkbox" /> Require Peer Reviews<br />
+
+<h4>Assign</h4>
+<h4>Assign to</h4>
+<input
+  type="text"
+  value="Everyone"
+  id="assign-to"
+  placeholder="Everyone"
+/>
+
+<h3>Due</h3>
+<input type="date" id= "due-by" value="2020-09-16" min="2020-09-04" max="2020-09-23" />
+
+<h3>Available from</h3>
+<input type="date" id= "available-from" value="2020-09-16" min="2020-09-04" max="2020-09-23" />
+
+<h3>Until</h3>
+<input type="date" id= "until" value="2020-09-16" min="2020-09-04" max="2020-09-23" />
+<br/>
+<button id="saveChanges">Save</button>
+<button id="cancelChanges">Cancel</button>
