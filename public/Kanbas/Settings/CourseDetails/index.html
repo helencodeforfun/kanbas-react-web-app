@@ -28,7 +28,7 @@
                   <li><a href="/Kanbas/Courses/Piazza/screen.html">Outcomes</a></li>
                   <li><a href="/Kanbas/Courses/Piazza/screen.html">Collaborations</a></li>
                   <li><a href="/Kanbas/Courses/Piazza/screen.html">Syllabus</a></li>
-                  <li><a href="/Kanbas/Settings/CourseDetails/index.html">Settings</a></li>
+                  <li><a href="/Kanbas/Settings/index.html">Settings</a></li>
                 </ul>
               </td>
             <td>
@@ -44,49 +44,44 @@
     </style>
     
     <section>
-        <label for="img"><h2>Image</h2></label>
+        <label for="image"><h2>Image: </h2></label>
         <input type="file" id="file" name="file">
     </section>
 
     <style>
-        h2, p {
+        h3, p {
             display: inline-block;
             margin-right: 10px;
         }
     </style>
-    
+
     <section>
-        <h2>Name</h2>
+        <h3>Name: </h3>
         <p>CS4550 12631 Web Development SEC 01 Fall 2023 [BOX-1-TR]</p>
     </section>
 
     <section>
-        <h2>Course Code</h2>
+        <h3>Course Code: </h3>
         <p>CS4550.12631.202410</p>
     </section>
 
     <section>
-        <h2>Blueprint Course</h2>
+        <h3>Blueprint Course: </h3>
         <p>No</p>
     </section>
 
     <section>
-        <h2>Course Template</h2>
-        <input type="checkbox" value="courseTemplate" name="check_courseTemplate" id="chkbox_courseTemplate"/>
-        <label for="chkbox_courseTemplate">Enable course as a Course Template</label>
+        <h3>Course Template: </h3>
+        <input type="checkbox" value="course-template" name="Course Template" id="enable-course-template"/>
+        <label for="enable-course-template">Enable course as a Course Template</label>
     </section>
 
     <section>
-        <h2>Time Zone</h2>
-        <select name="timezone_offset" id="timezone-offset">
-            <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
-            <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
-	        <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
-	        <option value="-05:00" selected>(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+        <h3>Time Zone</h3>
+        <select name="time-zone" id="time-zone">
+            <option value="eastern-time">Eastern Time (US &amp; Canada)(-05:00/-04:00)</option>
         </select>
     </section>
-
-    <h2>Course Details</h2>
 
 <div class="section">
     <style>
@@ -104,76 +99,89 @@
 
   <h3>Term: </h3>
   <p>202410_1_Fall 2023 Semester Full Term</p> <br/>
-
-  <h3>File Storage: </h3>
-  <p>10000 megabytes</p> <br/>
   
   <h3>Large Course: </h3>
-  <input type="checkbox" id="largeCourse"/> <br/>
-
-  <label for="largeCourse">Launch SpeedGrader Filtered by Student Group</label>
+  <input type="checkbox" id="large-course"/> <label for="Large Course">
+    Launch SpeedGrader Filtered by Student Group</label>
 </div>
 
 <div class="section">
-  <h3>Participation</h3>
-  <label for="timezone-offset">Choose Participation:</label>
-  <select name="timezone_offset" id="timezone-offset">
-      <option value="Term" selected>Term</option>
-      <option value="PlaceholderValue2">Placeholder Value 2</option>
-  </select>
-  <p>Course participation is limited to term start and end dates.</p>
-  <label for="startDate">Start Date:</label>
-  <input type="date" value=""/>
-  <label for="endDate">End Date:</label>
-  <input type="date" value=""/>
-  <input type="checkbox" id="startDate"/><label for="startDate">Restrict students from viewing course before term start date</label>
-  <input type="checkbox" id="endDate"/><label for="endDate">Restrict students from viewing course after term end date</label>
-</div>
+  <h3>Participation: </h3>
+  <table>
+    <tr>
+        <select name="term" id="term">
+            <option value="term">Term</option>
+          </select><br/>
+          <p>Course participation is limited to term start and end dates.</p><br/>
+          <label for="start-date">Start Date: </label><br/>
+          <input type="date" value=""/><br/>
+          <label for="end-date">End Date: </label><br/>
+          <input type="date" value=""/><br/>
+          <input type="checkbox" id="startDate"/>
+          <label for="startDate">Restrict students from viewing course before term start date</label>
+          <br/>
+          <input type="checkbox" id="endDate"/>
+          <label for="endDate">Restrict students from viewing course after term end date</label>
+        </div>
+    </tr>
+  </table>
+  
 
 <div class="section">
     <h3>Settings</h3>
+    <br
 
     <label for="dueTime">Due Time:</label>
     <select name="due_time" id="dueTime">
         <option value="11:59" selected>Account default (11:59 pm)</option>
         <option value="PV2">Placeholder Value 2</option>
     </select>
-    <p>This influences the user interface for setting due dates. It does not change the time due for any existing assignments.</p>
-
-    <label for="languageSelect">Language:</label>
-    <select name="language" id="languageSelect">
+    <br />
+    <p>This influences the user interface for setting due dates. It does not change the time<br/>
+        due for any existing assignments.</p>
+    <br />
+    <label for="language">Language:</label>
+    <select name="language" id="language">
         <option value="en-us" selected>Default to English (United States)</option>
-        <option value="PV2">Placeholder Value 2</option>
     </select>
+    <br />
+    <p>This will override any user/system language preferences.<br/>
+        This is only recommended for foreign language courses.</p>
+    <br />
+    <label for="file-storage">File Storage: 10,000 megabytes></label>
+    <br />
+    <h3>Large Course: </h3>
+    <input type="checkbox" id="large-course"/> <label for="Large Course">
+      Launch SpeedGrader Filtered by Student Group</label><br/>
 
-    <h3>Grading Scheme</h3>
+    <h3>Grading Scheme: </h3>
     <input type="checkbox" id="gradingScheme"/>
     <label for="gradingScheme">Enable course grading scheme</label>
-
-    <h3>License</h3>
+    <br />
+    <h3>License: </h3>
     <select name="license" id="License">
         <option value="Private" selected>Private (Copyrighted)</option>
         <option value="Public">Public</option>
     </select>
-
-    <h3>File Copyright</h3>
-    <input type="checkbox" id="fileCopyright"/>
-    <label for="fileCopyright">Must provide copyright and license info for files before publishing.</label>
+    <br />
+    <h3>File Copyright: </h3>
+    <input type="checkbox" id="file-copyright"/>
+    <label for="file-copyright">Must provide copyright and license info for files before they are published.</label>
     </div>
-
     <div class="section">
-    <h3>Visibility</h3>
-    <p>If you need to make your course public, please contact support.</p>
-    <select name="visibility" id="VisibilitySelect" disabled>
+    <h3>Visibility: </h3>
+    <p>If you need to make your course public, please contact support.</p><br/>
+    <select name="visibility" id="visibility">
         <option value="Course" selected>Course</option>
+        <br/>
     </select>
-    <input type="checkbox" id="courseIndexVisibility"/>
-    <label for="courseIndexVisibility">Include this course in the public course index</label>
+    <input type="checkbox" id="courseIndex-visibility"/>
+    <label for="courseIndex-visibility">Include this course in the public course index</label>
 </div>
 
 <div class="section">
-    <h3>Format</h3>
-    <select name="format" id="courseformat">
+    <h3>Format: </h3>
+    <select name="format" id="course-format">
         <option value="On-Campus" selected>On-Campus</option>
         <option value="Online">Online</option>
     </select>
@@ -185,16 +193,27 @@
     <label for="masteryPaths">Enable individual learning paths based on assessment</label>
 </div>
 
-    <section>
-        <h2>Description</h2>
-        <textarea cols="50" rows="5" placeholder="This is the assignment description."></textarea>
-    </section>
+<style>
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    h3 {
+        margin-right: 20px; /* Adjust this value to increase/decrease space between the heading and textarea */
+    }
+</style>
 
     <section>
-        <a class="btn" href="/Kanbas/Courses/Home/screen.html">
-            <button>Update Course Details</button>
-        </a>
-    </section>
+        <h3>Description</h3>
+        <textarea cols="60" rows="6"></textarea>
+        <br />
+    </section>     
+    <select>
+        <option value="more-options">-- More Options --</option>
+    </select>
+    <br />    <br />
+    <button>Update Course Details</button>
 </div>
 </tr>
 </table>
