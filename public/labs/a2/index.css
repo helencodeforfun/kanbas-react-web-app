@@ -1,0 +1,167 @@
+html body {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
+
+body {
+  scrollbar-color: #bdbdbd #f0f0f0;
+  scrollbar-width: thin;
+}
+
+.sidebar .ico {
+  padding: 0.1rem;
+  font-size: 1.8rem;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: black;
+  overflow:auto;
+}
+
+.sidebar a {
+  padding-top: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar a span{
+  padding: 9px;
+  font-size: x-small;
+}
+
+.sidebar a:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+.sidebar a:target{
+  background-color: whitesmoke;
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+.user-ico {
+  color: grey;
+}
+
+.page {
+  display: none;
+}
+
+.page .toggle {
+  margin-left: 1.5rem;
+}
+
+.account-nav {
+  width: 200px;
+  height: 86vh;
+  overflow: auto;
+}
+
+.account-nav a {
+  text-decoration: none;
+  color: red;
+  padding-left: 8px;
+}
+
+.account-nav a:hover {
+  color: black;
+  border-left: 3px solid black;
+}
+
+.account-nav a:target {
+  color: black;
+  font-weight: bolder;
+  border-left: 3px solid black;
+}
+
+.account-nav .active {
+  color: black;
+  border-left: 3px solid black;
+}
+
+.avator {
+  font-size: 12rem;
+}
+
+.profile a {
+  text-decoration: none;
+}
+
+.edit-profile {
+  display: none;
+  overflow: auto;
+  height: 80vh;
+}
+
+.bg-grey {
+  background-color: gainsboro;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight:300;
+}
+
+.card-title {
+  font-weight: 600;
+  color: skyblue;
+  font-size: large;
+}
+
+.card-subtitle {
+  font-weight: 600;
+  font-size: large;
+}
+
+.card-content {
+  font-size: small;
+}
+
+.card {
+  text-decoration: none;
+}
+.card img {
+  height: 8rem;
+  background-color: gray;
+  text-align: end;
+  margin-top: -2.5rem;
+  z-index: 0;
+}
+
+.card .share {
+  z-index: 1;
+}
+
+.checked {
+  border-left: 4px solid green;
+}
+
+.green {
+  color: green;
+}
+.round-pill {
+  border-radius: 25px;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 12px;
+  margin: 5px;
+  line-height: 25px;
+}

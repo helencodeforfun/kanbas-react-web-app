@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./fontawesome/js/all.js"></script>
+    <div class="container-fluid h-100 p-0">
+      <div class="d-flex h-100">
+        <div class="p-0 sidebar" id="sidebar">
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <div class="ico">
+              <li><i class="red fa-solid fa-lip fa-2xl fa-n fa-flip"></i></li>
+            </div>
+            <a href="#account" id="account">
+              <li>
+                <i class="user-ico fa-regular fa-circle-user fa-2xl"></i>
+                <span>Account</span>
+              </li>
+            </a>
+            <a href="#dashboard" id="dashboard">
+              <li>
+                <i class="fa-solid fa-gauge fa-2xl red"></i>
+                <span>Dashboard</span>
+              </li>
+            </a>
+            <a href="#courses" id="courses">
+              <li>
+                <i class="fa-solid fa-book fa-2xl red"></i>
+                <span>Courses</span>
+              </li>
+            </a>
+            <a href="#calendar" id="calendar">
+              <i class="red fa-2xl fa-solid fa-calendar-days"></i>
+              <span>Calendar</span>
+            </a>
+            <a href="#inbox" id="inbox">
+              <i class="red fa-2xl fa-solid fa-inbox"></i>
+              <span>Inbox</span>
+            </a>
+            <a href="#history" id="history">
+              <i class="red fa-2xl fa-regular fa-clock"></i>
+              <span>History</span>
+            </a>
+            <a href="#studio" id="studio">
+              <i class="red fa-2xl fa-solid fa-tv"></i>
+              <span>Studio</span>
+            </a>
+            <a href="#commons" id="commons">
+              <i class="red fa-2xl fa-brands fa-creative-commons"></i>
+              <span>Commons</span>
+            </a>
+            <a href="#helps" id="helps">
+              <i class="red fa-2xl fa-regular fa-circle-question"></i>
+              <span>Helps</span>
+            </a>
+          </ul>
+        </div>
+        <div class="container-fluid">
+          <div class="page p-4" id="page-account">
+            <div class="d-flex p-2">
+              <i class="red fa-xl fa-solid fa-bars"></i>
+              <span class="toggle">Jose Annunziato's Profile</span>
+            </div>
+            <hr class="my-3">
+            <div class="row">
+              <div class="col-3 p-0 account-nav">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#notifications" id="notifications">Notifications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#profile" id="profile">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#files" id="files">Files</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#settings" id="settings">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#eportfolios" id="eportfolios">ePortfolios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#share-content" id="share-content">Share content</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#the-hub" id="the-hub">The Hub</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quickly-course-tools" id="quickly-course-tools">Quickly Course Tools</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#global-announcements" id="global-announcements">Global Announcements</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 profile" id="content-profile">
+                <div><i class="avator fa-solid fa-circle-user"></i></div>
+                <h1 class="py-3">Jose Annunziato</h1>
+                <h3 class="mt-4">Contact</h3>
+                <span>No registered services, you can add some in settings</span>
+                <h3 class="mt-4">Biography</h3>
+                <span>Faculty, Software engineer, AI Space, and renewables enthusiast</span>
+                <h3 class="mt-4">Links</h3>
+                <a class="red" href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i> Youtube <i class="fa-solid fa-window-maximize"></i></a>
+              </div>
+              <div class="col-6 edit-profile" id="edit-profile">
+                <div><i class="avator fa-solid fa-circle-user"></i></div>
+                <form action="">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" required value="Jose Annunziato">
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Pronouns</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>None</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Title</label>
+                    <input type="text" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                    <h3 class="mt-4">Contact</h3>
+                    <span>No registered services, you can add some in settings</span>
+                  </div>
+                  <div class="mb-3">
+                    <h3>Biography</h3>
+                    <textarea class="form-control" rows="4" >Faculty, Software engineer, AI Space, and renewables enthusiast</textarea>
+                  </div>
+                  <div>
+                    <h3>Links</h3>
+                    <div class="row">
+                      <div class="col-3">
+                        <h4>Title</h4>
+                        <div class="d-flex">
+                          <input type="text" class="form-control" value="Youtube">
+                          <i class="fa-xl p-2 fa-solid fa-arrow-right"></i>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <h4>URL</h4>
+                        <div class="d-flex">
+                          <input type="text" value="https://youtube.com" class="form-control">
+                          <i class="fa-xl p-2 red mt-1 fa-solid fa-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <button class="btn btn-light bg-grey">Add another link</button>
+                    </div>
+                  </div>
+                  <hr class="my-3">
+                  <div class="d-flex p-1 justify-content-end gap-1">
+                    <button class="btn btn-light bg-grey mr-3">Cancel</button>
+                    <button class="btn btn-danger">Save Profile</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-2">
+                <button type="button" class="btn btn-secondary" id="editProfileBtn">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span id="editProfileBtnText">Edit Profile</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page-dashboard">
+            <span class="py-3 title">Dashboard</span>
+            <hr class="my-2">
+            <div class="container-fluid mt-4">
+              <h4>Published Courses (24)</h4>
+              <hr>
+              <div class="row px-3 gap-4" style="height: 80vh; overflow: auto;">
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a class="card p-0" href="#courses" style="width: 270px;">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn share"><i class="fa-solid fa-share"></i></button>
+                    </div>
+                    <img src="" class="card-img-top">
+                    <div class="card-body d-block">
+                      <div class="card-title">C54550 12632 Web Development</div>
+                      <div class="card-subtitle">C54550 12632 1756872</div>
+                      <p class="card-content">202210_11267821 Similar Full Team exercises</p>
+                      <button class="btn p-0"><i class="fa-xl fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page container-fluid" id="page-courses">
+            <div class="d-flex pt-3">
+              <i class="red fa-xl fa-solid fa-bars"></i>
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="toggle">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item red">C5450_26050_13726</li>
+                  <li class="breadcrumb-item active" aria-current="page" id="breadcrumb" style="font-weight: bold;">Modules</li>
+                </ol>
+              </nav>
+            </div>
+            <hr class="my-0">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-3 p-0 account-nav">
+                  <p style="font-size: 12px; margin-left: 20px;" class="mt-4">202410_1 fall 2033 Secret</p>
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#home" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#1" id="1">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#2" id="2">Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#3" id="3">Zoom Meeting</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#assignments" id="assignments">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#4" id="4">Quizzes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#grades" id="grades">Grades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#5" id="5">Peoples</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#6" id="6">Panopto Video</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#7" id="7">Discussions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#8" id="8">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#9" id="9">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#10" id="10">Files</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#11" id="11">Rubrics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#12" id="12">Outcomes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#13" id="13">Collaborations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#14" id="14">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#15" id="15">Progress Reports (EAB Navigate)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#16" id="16">Settings</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-9 col-lg-9" id="course-content">
+                  <div class="d-flex justify-content-end py-3">
+                    <div class="mt-2">
+                      <button class="btn btn-light btn-sm bg-grey">Collapse All</button>
+                      <button class="btn btn-light btn-sm bg-grey">View Progress</button>
+                      <span class="dropdown">
+                        <button class="btn btn-light btn-sm bg-grey dropdown-toggle" data-bs-toggle="dropdown">
+                          <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                          Publish
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </span>
+                      <button class="btn btn-danger btn-sm"><i class="fa-solid fa-plus"></i>Modules</button>
+                      <button class="btn btn-light btn-sm bg-grey"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-9">
+                      <ul class="list-group" style="height: 85vh; overflow: auto;">
+                        <li class="list-group-item d-flex justify-content-between bg-grey p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>A second item</span>
+                          </span>
+                          <span>
+                            <button class="btn dropdown-toggle p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn p-0"><i class="fa-solid fa-plus"></i></button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 checked">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 checked">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 checked">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0 checked">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between p-0">
+                          <span>
+                            <button class="btn"><i class="fa-solid fa-angles-right"></i></button>
+                            <span>sub title item</span>
+                          </span>
+                          <span>
+                            <button class="btn p-0">
+                              <i class="fa-solid fa-circle-check" style="color: green;"></i>
+                            </button>
+                            <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 .d-none .d-lg-block .d-xl-none">
+                      <h5>Course Status</h5>
+                      <div class="d-flex justify-content-center">
+                        <div class="btn-group w-100" role="group">
+                          <button class="btn btn-light bg-grey d-flex btn-sm justify-content-center">
+                            <i class="fa-solid fa-ban mt-1"></i>
+                            <span>Unpublish</span>
+                          </button>
+                          <button class="btn btn-primary d-flex btn-sm justify-content-center" style="background-color: greenyellow;">
+                            <i class="fa-xl fa-circle-check mt-2"></i>
+                            <span class="ml-1">Published</span>
+                          </button>
+                        </div>
+                        </div>
+                      <div class="d-grid gap-1 mt-3">
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-solid fa-file-import"></i>
+                          Import exist content
+                        </button>
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-solid fa-cloud-arrow-up"></i>
+                          Import exist content
+                        </button>
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                          Import exist content
+                        </button>
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-solid fa-circle-up"></i>
+                          Import exist content
+                        </button>
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-solid fa-inbox"></i>
+                          Import exist content
+                        </button>
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-brands fa-stack-overflow"></i>
+                          Import exist content
+                        </button>
+                        <button class="btn btn-light bg-grey">
+                          <i class="fa-solid fa-comments"></i>
+                          Import exist content
+                        </button>
+                      </div>
+                      <h5 class="mt-3">To Do</h5>
+                      <hr/>
+                      <div class="d-flex">
+                        <i class="red mt-1 fa-solid fa-circle-exclamation"></i>
+                        <div class="d-block" style="margin-left: 5px;">
+                          <span class="red">Something to do</span>
+                          <p style="font-size: 12px;">Something to do contents</p>
+                        </div>
+                        <button type="button" class="btn-close btn-sm" aria-label="Close"></button>
+                      </div>
+                      <h5 class="mt-3">Coming Up</h5>
+                      <hr/>
+                      <div class="d-flex">
+                        <i class="mt-1 fa-regular fa-calendar-plus"></i>
+                        <div>
+                          <span class="red">Something Coming up</span>
+                          <p style="font-size: 12px;">Something contents ....</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" id="assigement-content" style="display: none;">
+                  <div class="d-flex justify-content-between py-3">
+                    <input type="text" placeholder="Search Assignments" class="form-control" style="width: 15rem;">
+                    <div class="d-flex gap-1" style="margin-left: auto;">
+                      <button class="btn btn-light bg-grey">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Group</span>
+                      </button>
+                      <button class="btn btn-danger">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Assignments</span>
+                      </button>
+                      <button class="btn btn-light bg-grey">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <hr class="my-0">
+                  <ul class="list-group mt-3" style="height: 82vh; overflow: auto;">
+                    <li class="list-group-item d-flex justify-content-between p-2 bg-grey">
+                      <div class="d-flex">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn"><i class="fa-solid fa-caret-down"></i></button>
+                        <span class="mt-1 fw-bold" style="margin-left: 5px;">Assignments</span>
+                      </div>
+                      <div class="d-flex justify-text-center">
+                        <div class="round-pill">40% of Total</div>
+                        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between checked">
+                      <div class="d-flex p-2">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn">
+                          <i class="fa-xl fa-solid fa-calendar-week green"></i>
+                        </button>
+                        <div class="d-block">
+                          <h6 class="fw-bold assignment-title">A1 HTML</h6>
+                          <span class="text-secondary">Week 0 - SETUP - Week start on Monday 25th September</span>
+                          <p class="text-secondary">Due 30th September 2022 at 11:59 pm | 100 pts</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn"><i class="fa-solid fa-circle-check green"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between checked">
+                      <div class="d-flex p-2">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn">
+                          <i class="fa-xl fa-solid fa-calendar-week green"></i>
+                        </button>
+                        <div class="d-block">
+                          <h6 class="fw-bold assignment-title">A1 HTML</h6>
+                          <span class="text-secondary">Week 0 - SETUP - Week start on Monday 25th September</span>
+                          <p class="text-secondary">Due 30th September 2022 at 11:59 pm | 100 pts</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn"><i class="fa-solid fa-circle-check green"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between checked">
+                      <div class="d-flex p-2">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn">
+                          <i class="fa-xl fa-solid fa-calendar-week green"></i>
+                        </button>
+                        <div class="d-block">
+                          <h6 class="fw-bold assignment-title">A1 HTML</h6>
+                          <span class="text-secondary">Week 0 - SETUP - Week start on Monday 25th September</span>
+                          <p class="text-secondary">Due 30th September 2022 at 11:59 pm | 100 pts</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn"><i class="fa-solid fa-circle-check green"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between checked">
+                      <div class="d-flex p-2">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn">
+                          <i class="fa-xl fa-solid fa-calendar-week green"></i>
+                        </button>
+                        <div class="d-block">
+                          <h6 class="fw-bold assignment-title">A1 HTML</h6>
+                          <span class="text-secondary">Week 0 - SETUP - Week start on Monday 25th September</span>
+                          <p class="text-secondary">Due 30th September 2022 at 11:59 pm | 100 pts</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn"><i class="fa-solid fa-circle-check green"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between checked">
+                      <div class="d-flex p-2">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn">
+                          <i class="fa-xl fa-solid fa-calendar-week green"></i>
+                        </button>
+                        <div class="d-block">
+                          <h6 class="fw-bold assignment-title">A1 HTML</h6>
+                          <span class="text-secondary">Week 0 - SETUP - Week start on Monday 25th September</span>
+                          <p class="text-secondary">Due 30th September 2022 at 11:59 pm | 100 pts</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn"><i class="fa-solid fa-circle-check green"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between checked">
+                      <div class="d-flex p-2">
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <button class="btn">
+                          <i class="fa-xl fa-solid fa-calendar-week green"></i>
+                        </button>
+                        <div class="d-block">
+                          <h6 class="fw-bold assignment-title">A1 HTML</h6>
+                          <span class="text-secondary">Week 0 - SETUP - Week start on Monday 25th September</span>
+                          <p class="text-secondary">Due 30th September 2022 at 11:59 pm | 100 pts</p>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn"><i class="fa-solid fa-circle-check green"></i></button>
+                        <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col" id="assignment-edit" style="display: none;">
+                  <div class="d-flex justify-content-end gap-2 p-2">
+                    <button class="btn green"><i class="fa-solid fa-circle-check"></i>Published</button>
+                    <button class="btn btn-light bg-grey"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                  </div>
+                  <hr class="mt-1">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Assignment Name</label>
+                    <input type="text" class="form-control mb-3" value="A1 HTML + ENV">
+                    <textarea name="" id="" cols="30" rows="6" class="form-control">
+                      Margin utilities are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to margin-bottom utilities, and using a single direction throughout the form for consistency.
+                      More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options. Requires the $enable-grid-classes Sass variable to be enabled (on by default).
+                    </textarea>
+                  </div>
+                  <div class="container">
+                    <div class="row mb-3 w-50 mx-auto">
+                      <label for="" class="col-sm-4 col-form-label">Points</label>
+                      <div class="col-sm-8"><input type="text" class="form-control" value="100"></div>
+                    </div>
+                    <div class="row mb-3 w-50 mx-auto">
+                      <label for="" class="col-sm-4 col-form-label">Assignment Group</label>
+                      <div class="col-sm-8">
+                        <select class="form-select" id="autoSizingSelect">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3 w-50 mx-auto">
+                      <label for="" class="col-sm-4 col-form-label">Display Grade as</label>
+                      <div class="col-sm-8">
+                        <select class="form-select" id="autoSizingSelect">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3 w-50 mx-auto">
+                      <div class="col-sm-4"></div>
+                      <div class="col-sm-8">
+                        <div class="form-check ms-2">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Do not count the Assignment to final grade
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3 w-50 mx-auto">
+                      <label class="col-sm-4 col-form-label">Submission Type</label>
+                      <div class="col-sm-8 card p-3">
+                        <select name="" id="" class="form-select mb-2">
+                          <option value="1" selected>Online</option>
+                          <option value="2" >offline</option>
+                        </select>
+                        <span class="fw-bold mb-1">Online Entry Options</span>
+                        <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input">
+                          <label for="" class="form-check-label">Text Entry</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input">
+                          <label for="" class="form-check-label">Website URL</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input">
+                          <label for="" class="form-check-label">Media Recording</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input">
+                          <label for="" class="form-check-label">Student Annotation</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input type="checkbox" class="form-check-input">
+                          <label for="" class="form-check-label">File Uploads</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" id="grades-content" style="display: none;">
+                  <div class="d-flex justify-content-end p-2 gap-2">
+                    <button class="btn btn-light bg-grey">
+                      <i class="fa-solid fa-file-import"></i>
+                      <span>Import</span>
+                    </button>
+                    <button class="btn btn-light bg-grey">
+                      <i class="fa-solid fa-file-export"></i>
+                      <span>Export</span>
+                    </button>
+                    <button class="btn btn-light bg-grey ms-1">
+                      <i class="fa-solid fa-gear"></i>
+                    </button>
+                  </div>
+                  <div class="row mt-2 gap-2">
+                    <div class="col">
+                      <label for="" class="form-label">Student Name</label>
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search Students">
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label for="" class="form-label">Assignment Name</label>
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search Assignment">
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-light bg-grey">
+                        <i class="fa-solid fa-filter"></i>
+                        <span>Apply Filters</span>
+                      </button>
+                    </div>
+                    <div>
+                      <table class="table table-striped table-hover" style="height: 69vh; overflow: auto;">
+                        <thead>
+                          <tr>
+                            <th>Student Name</th>
+                            <th>
+                              <span>A1 SETUP</span>
+                              <span>Out of 100</span>
+                            </th>
+                            <th>
+                              <span>A2 HTML</span>
+                              <span>Out of 100</span>
+                            </th>
+                            <th>
+                              <span>A3 CSS</span>
+                              <span>Out of 100</span>
+                            </th>
+                            <th>
+                              <span>A4 Bootstrap</span>
+                              <span>out of 100</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>
+                              <div class="input-group">
+                                <input type="text" class="form-control" value="99.3%">
+                                <span class="input-group-text">
+                                  <i class="fa-solid fa-square-plus"></i>
+                                </span>
+                              </div>
+                            </td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                          <tr>
+                            <td style="color: red;">Doxa Axibey</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>89.2%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page" id="page-calendar">
+            <h1>calendar</h1>
+          </div>
+          <div class="page" id="page-inbox">
+            <h1>inbox</h1>
+          </div>
+          <div class="page" id="page-history">
+            <h1>history</h1>
+          </div>
+          <div class="page" id="page-studio">
+            <h1>studio</h1>
+          </div>
+          <div class="page" id="page-commons">
+            <h1>commons</h1>
+          </div>
+          <div class="page" id="page-helps">
+            <h1>helps</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
