@@ -16,41 +16,26 @@ I followed the white rabbit down the hole.
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Edit Profile</title>
+  <title>Edit Profile</title>
 </head>
+
 <body>
-    <h1>Edit Profile</h1>
+  <h1>Edit Profile</h1>
 
-    <form action="/Kanbas/Account/Profile/screen.html" id="profileForm">
-        Name: <input name="fullName" type="text" value="Alice Wonderland" />
-        <br />
-        Biography:<br />
-        <textarea name="biography">I followed the white rabbit down the hole.</textarea>
-        <br />
-        <button type="button" id="saveButton">Save</button>
-        <button type="button" id="cancelButton">Cancel</button>
-    </form>
+  <form action="/Kanbas/Account/Profile/screen.html" id="profileForm">
+    Name: <input name="fullName" type="text" value="Alice Wonderland" />
+    <br />
+    Biography:<br />
+    <textarea name="biography">
+I followed the white rabbit down the hole.</textarea>
+    <br />
+    <button type="button" id="saveButton">Save</button>
+    <button type="button" id="cancelButton">Cancel</button>
+  </form>
 
-    <script>
-        // Add event listeners for Save and Cancel buttons
-        document.getElementById("saveButton").addEventListener("click", function () {
-            // Get form data and send it to the server for saving
-            const formData = new FormData(document.getElementById("profileForm"));
-            // Use AJAX or fetch to send the data to the server here
-
-            // For this example, we'll just display an alert
-            alert("Profile saved!");
-        });
-
-        document.getElementById("cancelButton").addEventListener("click", function () {
-            // You can implement any cancel action here, such as redirecting or showing a confirmation message
-            if (confirm("Are you sure you want to cancel? Any unsaved changes will be lost.")) {
-                // Redirect to a different page, for example
-                window.location.href = "/Kanbas/Account/Profile/screen.html";
-            }
-        });
-    </script>
 </body>
+
 </html>
 <!-- ?fullName=Alice+Wonderland&biography=I+followed+the+white+rabbit+down+the+hole.%0D%0A -->

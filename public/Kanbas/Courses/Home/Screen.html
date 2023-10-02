@@ -1,157 +1,348 @@
-<table border="1" width="100%">
-    <tr>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-          <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
-          <li><a href="/Kanbas/KanbasNavigation/Inbox/index.html">Inbox</a></li>
-          <li><a href="/Kanbas/KanbasNavigation/History/index.html">History</a></li>
-          <li><a href="/Kanbas/KanbasNavigation/Studio/index.html">Studio</a></li>
-          <li><a href="/Kanbas/KanbasNavigation/Commons/index.html">Commons</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Help</a></li>
+<head>
+  <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Kanbas/index.css">
+</head>
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-1 navbar d-none d-lg-block">
+      <ul class="nav flex-column">
+        <li class="nav-item"><i class="logo fa-solid fa-n"></i></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Account/Profile/screen.html">
+          <i class="fa-regular fa-circle-user" style="color: gray;"></i><span>Account</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Dashboard/screen.html">
+          <i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></a></li>
+        <li class="nav-item active"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html">
+          <i class="fa-solid fa-book"></i><span>Courses</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Calendar/index.html">
+          <i class="fa-solid fa-calendar-days"></i><span>Calendar</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/Inbox/index.html">
+          <i class="fa-solid fa-inbox"></i><span>Inbox</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/History/index.html">
+          <i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/Studio/index.html">
+          <i class="fa-solid fa-tv"></i><span>Studio</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/Commons/index.html">
+          <i class="fa-solid fa-comments"></i><span>Commons</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html">
+          <i class="fa-regular fa-circle-question"></i><span>Help</span></a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <i class="fa-solid fa-bars fa-xl" style="color: red;"></i>
+          </button>
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mt-3 ms-2">
+              <li class="breadcrumb-item"><a class="nav-link fw-bolder red" href="#">Home</a></li>
+              <li class="breadcrumb-item active fw-medium" aria-current="page">Library</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="d-flex align-items-center d-lg-none">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#submenu" aria-expanded="false" aria-controls="submenu"><i class="fa-solid fa-angle-down"></i></button>
+        </div>
+      </div>
+      <div class="container-fluid collapse d-lg-none" id="navbar">
+        <ul class="nav flex-column">
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-circle-user fa-2xl grey"></i>Account</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-gauge-high fa-2xl"></i>Dashboard</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-book fa-2xl"></i>Courses</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-calendar-days fa-2xl"></i>Calendar</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-inbox fa-2xl"></i>Inbox</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-clock-rotate-left fa-2xl"></i>History</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-tv fa-2xl"></i>Studio</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-comments fa-2xl"></i>Commons</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-circle-question fa-2xl"></i>Help</li>
         </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-          <li><a href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/index.html">Assignments</a></li>
-          <li><a href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
-          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+      </div>
+      <hr class="my-0">
+      <div class="row collapse d-lg-none" id="submenu">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-home mx-2"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Modules/index.html"><i class="fa-solid fa-ticket mx-2"></i>Modules</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-globe mx-2"></i>Piazza</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-handshake mx-2"></i>Zoom Meetings</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Assignments/AssignmentEditor/index.html"><i class="fa-solid fa-pen-to-square mx-2"></i>Assignments</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Quizzes/index.html"><i class="fa-solid fa-file-lines mx-2"></i>Quizzes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Grades/screen.html"><i class="fa-solid fa-star mx-2"></i>Grades</a></li>
           <!-- These are some dummy links not fully implemented:<br/> -->
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">People</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Panopto Video</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Discussion</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Announcements</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Pages</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Files</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Rubrics</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Outcomes</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Collaborations</a></li>
-          <li><a href="/Kanbas/Courses/Piazza/screen.html">Syllabus</a></li>
-          <li><a href="/Kanbas/Settings/index.html">Settings</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-user-group mx-2"></i>People</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-video mx-2"></i>Panopto Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-discourse mx-2"></i>Discussion</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-bullhorn mx-2"></i>Announcements</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-table-columns mx-2"></i>Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-file mx-2"></i>Files</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-oil-can mx-2"></i>Rubrics</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-instagram mx-2"></i>Outcomes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-chart-simple mx-2"></i>Collaborations</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i class="fa-solid fa-pen-ruler mx-2"></i>Syllabus</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Settings/index.html"><i class="fa-solid fa-gear mx-2"></i>Settings</a></li>
         </ul>
-      </td>
-      <td valign="top">
-        <button>Collapse All</button>
-        <button>View Progress</button>
-        <select>
-          <option>Publish All</option>
-          <option>Publish all items and modules</option>
-          <option>UnPublish</option>
-        </select>
-        <button>+ Module</button>
-        <hr />
-        <ul>
-          <li>
-            Week 0
-            <ul>
-              <li>
-                LEARNING OBJECTIVES
-                <ul>
-                  <li>Introduction to the course</li>
-                  <li>Introduction to the course website</li>
-                  <li>Introduction to the course tools</li>
-                  <li>Introduction to the course assignments</li>
-                </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 submenu d-lg-block d-none">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Zoom Meetings</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Assignments/AssignmentEditor/index.html">Assignments</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <!-- These are some dummy links not fully implemented:<br/> -->
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">People</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Panopto Video</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Discussion</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Announcements</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Files</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Rubrics</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Outcomes</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Collaborations</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Syllabus</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Settings/index.html">Settings</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="container-fluid d-flex justify-content-end py-3 gap-1">
+            <button class="btn btn-light btn-sm">Collapse All</button>
+            <button class="btn btn-light btn-sm">View Progress</button>
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-circle-check green"></i>
+                Publish All
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Publish All</a></li>
+                <li><a class="dropdown-item" href="#">Publish all items and modules</a></li>
+                <li><a class="dropdown-item" href="#">UnPublish</a></li>
+              </ul>
+            </div>
+            <button class="btn btn-danger">+ Module</button>
+            <button class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          </div>
+          <hr class="my-0">
+          <div class="row">
+            <ul class="col list-group p-3">
+              <li class="list-group-item bg-grey d-flex justify-content-between">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <span class="fw-medium">Week 0 - INTRO</span>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <i class="fa-solid fa-plus mx-2 grey"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <span class="fw-medium">LEARNING OBJECTS</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <span class="fw-medium">READING</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <span class="fw-medium">SLIDES</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between checked">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-solid fa-grip-vertical grey"></i>
+                  <div style="width: 25px;"></div>
+                  <span class="fw-medium">Introduce to the courses</span>
+                </div>
+                <div class="d-flex gap-4 align-items-center">
+                  <i class="fa-solid fa-circle-check green"></i>
+                  <i class="fa-solid fa-ellipsis-vertical grey"></i>
+                </div>
               </li>
             </ul>
-          </li>
-          <li>
-            Week 1
-            <ul>
-              <li>
-                LEARNING OBJECTIVES
-                <ul>
-                  <li>Introduction to the course</li>
-                  <li>Introduction to the course website</li>
-                  <li>Introduction to the course tools</li>
-                  <li>Introduction to the course assignments</li>
-                </ul>
-                <li>
-                  READING
-                  <ul>
-                    <li>Full Stack Developer -Chapter 1 - Introduction</li>
-                    <li>Full Stack Developer -Chapter 2 - Creating User Interfaces with HTML</li>
-                </ul>
-                <li>
-                  SLICES
-                  <ul>
-                    <li><a href="Introduction_to_Web_Development.html">Introduction to Web Development Links to an external site</a></li>
-                    <li><a href="Creating_an_HTTP_server_with_Node.js.html">Creating an HTTP server with Node.js Links to an external site</a></li>
-                    <li><a href="Creating_a_React_Application.html">Creating a React Application Links to an external site</a></li>
-                  </ul>
-          </li>
-          <li>
-            Week 2
-            <ul>
-              <li>
-                LEARNING OBJECTIVES
-                <ul>
-                  <li>Introduction to the course</li>
-                  <li>Introduction to the course website</li>
-                  <li>Introduction to the course tools</li>
-                  <li>Introduction to the course assignments</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Week 3
-            <ul>
-              <li>
-                LEARNING OBJECTIVES
-                <ul>
-                  <li>Introduction to the course</li>
-                  <li>Introduction to the course website</li>
-                  <li>Introduction to the course tools</li>
-                  <li>Introduction to the course assignments</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Week 4
-            <ul>
-              <li>
-                LEARNING OBJECTIVES
-                <ul>
-                  <li>Introduction to the course</li>
-                  <li>Introduction to the course website</li>
-                  <li>Introduction to the course tools</li>
-                  <li>Introduction to the course assignments</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </td>
-      <td valign="top">
-        Course Status<br />
-        <button>Collapse All</button>
-        <button>View Progress</button>
-        <ul>
-          <li><a href="Import_Existing_Content.html">Import Existing Content</a></li>
-          <li><a href="Import_From_Commons.html">Import From Commons</a></li>
-          <li><a href="Choose_Home_Page.html">Choose Home Page</a></li>
-          <li><a href="View_Course_Stream.html">View Course Stream</a></li>
-          <li><a href="New_Announcement.html">New Announcement</a></li>
-          <li><a href="New_Analytics.html">New Analytics</a></li>
-          <li><a href="View_Course_Notifications.html">View Course Notifications</a></li>
-        </ul>
-        Coming Up<br />
-        <a href="View_Calendar.html">View Calendar</a><br/>
-            <ul>
-              <li><a href="Lecture_CS4550.html">Lecture CS4550.12631.202410 Sept 7 at 11:45am</a></li>
-              <li><a href="Lecture_CS4550.html">Lecture CS4550.12631.202410 Sept 11 at 11:45am</a></li>
-              <li><a href="Lecture_CS4550.html">Lecture CS4550.12631.202410 Sept 11 at 6pm</a></li>
-            </ul>
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+
+            <div class="col-sm-3 d-lg-block d-none">
+              <div class="mt-2">Course Status</div>
+              <div class="btn-group">
+                <button class="btn btn-grey"><i class="fa-regular fa-circle-xmark me-1"></i>Collapse All</button>
+                <button class="btn btn-success"><i class="fa-solid fa-circle-check me-1"></i>View Progress</button>
+              </div>
+              <div class="d-grid gap-1 mt-1">
+                <a class="btn btn-grey bg-grey" href="Import_Existing_Content.html"><i class="fa-solid fa-file-import mx-2"></i>Import Existing Content</a>
+                <a class="btn btn-grey bg-grey" href="Import_From_Commons.html"><i class="fa-solid fa-upload mx-2"></i>Import From Commons</a>
+                <a class="btn btn-grey bg-grey" href="Choose_Home_Page.html"><i class="fa-solid fa-home mx-2"></i>Choose Home Page</a>
+                <a class="btn btn-grey bg-grey" href="View_Course_Stream.html"><i class="fa-solid fa-paperclip mx-2"></i>View Course Stream</a>
+                <a class="btn btn-grey bg-grey" href="New_Announcement.html"><i class="fa-solid fa-bookmark mx-2"></i>New Announcement</a>
+                <a class="btn btn-grey bg-grey" href="New_Analytics.html"><i class="fa-solid fa-print mx-2"></i>New Analytics</a>
+                <a class="btn btn-grey bg-grey" href="View_Course_Notifications.html"><i class="fa-solid fa-layer-group mx-2"></i>View Course Notifications</a>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="mt-2">Coming Up</div>
+                <a class="btn" href="View_Calendar.html"><i class="fa-solid fa-calendar-days mx-2 grey"></i><span class="red">View Calendar</span></a>
+              </div>
+              <hr class="my-1">
+              <div class="d-flex mb-1">
+                <i class="fa-solid fa-calendar grey p-2 me-1"></i>
+                <a class="nav-link grey" href="Lecture_CS4550.html">
+                  <div class="fw-bolder red">Lecture</div>
+                  CS4550.12631.202410 <br> Sept 7 at 11:45am
+                </a>
+              </div>
+              <div class="d-flex mb-1">
+                <i class="fa-solid fa-calendar grey p-2 me-1"></i>
+                <a class="nav-link grey" href="Lecture_CS4550.html">
+                  <div class="fw-bolder red">Lecture</div>
+                  CS4550.12631.202410 <br> Sept 7 at 11:45am
+                </a>
+              </div>
+              <div class="d-flex mb-1">
+                <i class="fa-solid fa-calendar grey p-2 me-1"></i>
+                <a class="nav-link grey" href="Lecture_CS4550.html">
+                  <div class="fw-bolder red">Lecture</div>
+                  CS4550.12631.202410 <br> Sept 7 at 11:45am
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
