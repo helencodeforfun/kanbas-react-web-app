@@ -1,0 +1,112 @@
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green
+}
+
+.grey {
+  color: grey;
+}
+
+.bg-grey {
+  background-color: whitesmoke;
+}
+
+.btn-grey {
+  border: 1px solid gray;
+}
+
+.checked {
+  border-left: 4px solid green;
+}
+
+.navbar {
+  width: 87px;
+  overflow:visible;
+  display: flex;
+  align-items: start;
+  background-color: black;
+  text-align: center;
+}
+
+.navbar .logo {
+  color: red;
+  font-size: 4rem;
+  margin-left: 5px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 5px;
+}
+
+.navbar a span {
+  margin-top: 3px;
+  display: block;
+  width: 100%;
+}
+
+.navbar a i {
+  font-size: 2rem;
+  color: red;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: red;
+}
+
+.navbar .active {
+  background-color: white;
+  color: red;
+}
+
+.navbar .active span {
+  color: red;
+}
+
+.submenu .active {
+  border-left: 3px solid black;
+  color: black;
+}
+
+#submenu a{
+  color: red;
+}
+
+.submenu a {
+  padding: 3px 5px;
+  color: red;
+}
+
+.submenu a:hover {
+  border-left: 3px solid black;
+  color: black;
+}
+
+table {
+  text-align: center;
+}
+
+table th {
+  text-align: center;
+}
+
+.tabs .active {
+  color: black;
+}
+
+.tabs .nav-link:hover {
+  color: black;
+}

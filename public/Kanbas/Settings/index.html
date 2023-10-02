@@ -1,0 +1,517 @@
+<head>
+  <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/solid.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Kanbas/index.css">
+</head>
+
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-sm-1 navbar d-none d-lg-block">
+      <ul class="nav flex-column">
+        <li class="nav-item"><i class="logo fa-solid fa-n"></i></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Account/Profile/screen.html">
+            <i class="fa-regular fa-circle-user" style="color: gray;"></i><span>Account</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Dashboard/screen.html">
+            <i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></a></li>
+        <li class="nav-item active"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa-solid fa-book"></i><span>Courses</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Calendar/index.html">
+            <i class="fa-solid fa-calendar-days"></i><span>Calendar</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/Inbox/index.html">
+            <i class="fa-solid fa-inbox"></i><span>Inbox</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/History/index.html">
+            <i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/Studio/index.html">
+            <i class="fa-solid fa-tv"></i><span>Studio</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/KanbasNavigation/Commons/index.html">
+            <i class="fa-solid fa-comments"></i><span>Commons</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html">
+            <i class="fa-regular fa-circle-question"></i><span>Help</span></a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+            <i class="fa-solid fa-bars fa-xl" style="color: red;"></i>
+          </button>
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mt-3 ms-2">
+              <li class="breadcrumb-item"><a class="nav-link fw-bolder red" href="#">CS4450.12387.20234010</a></li>
+              <li class="breadcrumb-item active fw-medium" aria-current="page">Settings</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="d-flex align-items-center d-lg-none">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#submenu" aria-expanded="false"
+            aria-controls="submenu"><i class="fa-solid fa-angle-down"></i></button>
+        </div>
+      </div>
+      <div class="container-fluid collapse d-lg-none" id="navbar">
+        <ul class="nav flex-column">
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i
+              class="fa-solid fa-circle-user fa-2xl grey"></i>Account</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i
+              class="fa-solid fa-gauge-high fa-2xl"></i>Dashboard</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-book fa-2xl"></i>Courses
+          </li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i
+              class="fa-solid fa-calendar-days fa-2xl"></i>Calendar</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-inbox fa-2xl"></i>Inbox
+          </li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i
+              class="fa-solid fa-clock-rotate-left fa-2xl"></i>History</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i class="fa-solid fa-tv fa-2xl"></i>Studio</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i
+              class="fa-solid fa-comments fa-2xl"></i>Commons</li>
+          <li class="nav-item red d-flex gap-3 align-items-center p-3"><i
+              class="fa-solid fa-circle-question fa-2xl"></i>Help</li>
+        </ul>
+      </div>
+      <hr class="my-0">
+      <div class="row collapse d-lg-none" id="submenu">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html"><i
+                class="fa-solid fa-home mx-2"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Modules/index.html"><i
+                class="fa-solid fa-ticket mx-2"></i>Modules</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-globe mx-2"></i>Piazza</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-handshake mx-2"></i>Zoom Meetings</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Assignments/AssignmentEditor/index.html"><i
+                class="fa-solid fa-pen-to-square mx-2"></i>Assignments</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Quizzes/index.html"><i
+                class="fa-solid fa-file-lines mx-2"></i>Quizzes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Grades/screen.html"><i
+                class="fa-solid fa-star mx-2"></i>Grades</a></li>
+          <!-- These are some dummy links not fully implemented:<br/> -->
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-user-group mx-2"></i>People</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-video mx-2"></i>Panopto Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-discourse mx-2"></i>Discussion</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-bullhorn mx-2"></i>Announcements</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-table-columns mx-2"></i>Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-file mx-2"></i>Files</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-oil-can mx-2"></i>Rubrics</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-instagram mx-2"></i>Outcomes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-chart-simple mx-2"></i>Collaborations</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html"><i
+                class="fa-solid fa-pen-ruler mx-2"></i>Syllabus</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Kanbas/Settings/index.html"><i
+                class="fa-solid fa-gear mx-2"></i>Settings</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 submenu d-lg-block d-none">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Modules/index.html">Modules</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Zoom Meetings</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="/Kanbas/Courses/Assignments/AssignmentEditor/index.html">Assignments</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Quizzes/index.html">Quizzes</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <!-- These are some dummy links not fully implemented:<br/> -->
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">People</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Panopto Video</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Discussion</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Announcements</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Pages</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Files</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Rubrics</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Outcomes</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Collaborations</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Courses/Piazza/screen.html">Syllabus</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Kanbas/Settings/index.html">Settings</a></li>
+          </ul>
+        </div>
+        <div class="col mt-3">
+          <nav class="tabs">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link red active" id="nav-details-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-details" type="button" role="tab" aria-controls="nav-details"
+                aria-selected="true">Course Details</button>
+              <button class="nav-link red" id="nav-sections-tab" data-bs-toggle="tab" data-bs-target="#nav-sections"
+                type="button" role="tab" aria-controls="nav-sections" aria-selected="false">Sections</button>
+              <button class="nav-link red" id="nav-navigation-tab" data-bs-toggle="tab" data-bs-target="#nav-navigation"
+                type="button" role="tab" aria-controls="nav-navigation" aria-selected="false">Navigation</button>
+              <button class="nav-link red" id="nav-app-tab" data-bs-toggle="tab" data-bs-target="#nav-app" type="button"
+                role="tab" aria-controls="nav-app" aria-selected="false">App</button>
+              <button class="nav-link red" id="nav-feature-tab" data-bs-toggle="tab" data-bs-target="#nav-feature"
+                type="button" role="tab" aria-controls="nav-feature" aria-selected="false">Feature Options</button>
+              <button class="nav-link red" id="nav-integrations-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-integrations" type="button" role="tab" aria-controls="nav-integrations"
+                aria-selected="false">Integrations</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab"
+              tabindex="0">
+              <div class="container-fluid p-0">
+                <h3 class="my-3">Courses Details</h3>
+              </div>
+              <div class="row mb-3 align-items-center">
+                <label for="" class="col-sm-3 form-label fw-bold">Image</label>
+                <div class="col-sm-4 border d-flex justify-content-center align-items-center" style="height: 10rem;">
+                  <button class="btn btn-light">Choose Image</button>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Name:</label>
+                <div class="col-sm-8">CS4450 Web Development SEC 01 Fall 2023</div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Courses Code</label>
+                <div class="col-sm-8">CS4450.12284.47384</div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Blueprint Courses</label>
+                <div class="col-sm-8">NO</div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Course Template</label>
+                <div class="col-sm-8 form-check">
+                  <input type="checkbox" class="form-check-input">
+                  <label for="" class="form-check-label">Enable courses as a course Template</label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Time zone</label>
+                <div class="col-sm-7">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>Eastern Time (US & Canda) (-5:00/-4:00)</option>
+                    <option value="" selected>Eastern Time (US & Canda) (-5:00/-4:00)</option>
+                    <option value="" selected>Eastern Time (US & Canda) (-5:00/-4:00)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">SIS ID</label>
+                <div class="col-sm-8">
+                  CS4450.123827.34325
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Subaccount</label>
+                <div class="col-sm-8 red">
+                  CS Undergrade
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Term</label>
+                <div class="col-sm-8">
+                  202410_1 Fall 2023 Semester Full Team
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Participation</label>
+                <div class="col-sm-7">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>Term</option>
+                    <option value="">Term</option>
+                    <option value="">Term</option>
+                  </select>
+                  <p class="mt-2" style="font-size: 14px;">Course participation is limit to Team start and end data</p>
+                  <div class="d-block mb-1">
+                    <div for="" class="form-label fw-bold">start</div>
+                    <input type="date" class="form-contorl">
+                  </div>
+                  <div class="d-block mb-3">
+                    <div for="" class="form-label fw-bold">end</div>
+                    <input type="date" class="form-contorl">
+                  </div>
+                  <div class="mb-1 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label">Restrict student from viewing courses before team start
+                      date</label>
+                  </div>
+                  <div class="mb-1 form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label">Restrict student from viewing courses after team end
+                      date</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Detail due time</label>
+                <div class="col-sm-7">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>Account default (11:59 am)</option>
+                    <option value="">Account default (11:59 am)</option>
+                    <option value="">Account default (11:59 am)</option>
+                    <option value="">Account default (11:59 am)</option>
+                  </select>
+                  <p class="mt-1" style="font-size: 14px;">This influence the user interface for setting the datas. It
+                    does not change the time for any existing assignments</p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Language</label>
+                <div class="col-sm-7">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>Not set(User configurable, default to English)</option>
+                    <option value="">Not set(User configurable, default to English)</option>
+                  </select>
+                  <p class="mt-1" style="font-size: 14px;">This will override any user/system language preferences. This
+                    is only recommend for foreign language courses</p>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">File Storage</label>
+                <div class="col-sm-8">10000 megabytes</div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Large Course</label>
+                <div class="form-check col-sm-8">
+                  <input type="checkbox" class="form-check-input">
+                  <label for="" class="form-check-label">Launch SpeedGrader filter for student group</label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Grading Schema</label>
+                <div class="form-check col-sm-8">
+                  <input type="checkbox" class="form-check-input">
+                  <label for="" class="form-check-label">Enable course grading schema</label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Licenses</label>
+                <div class="col-sm-7 d-flex align-items-center">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>Private(Copyrighted)</option>
+                    <option value="">Private(Copyrighted)</option>
+                  </select>
+                  <i class="fa-solid fa-circle-question red fa-xl mx-2"></i>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">File Copyright</label>
+                <div class="form-check col-sm-8">
+                  <input type="checkbox" class="form-check-input">
+                  <label for="" class="form-check-label">Copyright and licenses must provided for files before they are
+                    published</label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="col-sm-3 form-label fw-bold">Visibility</label>
+                <div class="col-sm-7">
+                  <p style="font-size: 14px;">If you need to make your courses public, please contact your
+                    administrator/support</p>
+                  <div class="d-flex align-items-center">
+                    <select name="" id="" class="form-select">
+                      <option value="" selected>Course</option>
+                      <option value="">Course</option>
+                    </select>
+                    <i class="fa-solid fa-circle-question fa-xl mx-2 red"></i>
+                  </div>
+                  <div class="form-check mt-2">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label">Include this course in public index</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="form-label col-sm-3 fw-bold">Format</label>
+                <div class="col-sm-7">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>On-Campus</option>
+                    <option value="">On-Campus</option>
+                    <option value="">On-Campus</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="form-label col-sm-3 fw-bold">Mastery Paths</label>
+                <div class="col-sm-8" class="form-check">
+                  <input type="checkbox" class="form-check-input">
+                  <label for="" class="form-check-label">Enable individual learning paths for student base on
+                    assignment</label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="" class="form-label col-sm-3 fw-bold">Description</label>
+                <div class="col-sm-7">
+                  <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <button class="btn red col-2 offset-sm-3">More Options</button>
+              </div>
+              <hr class="my-3">
+              <div class="mb-3 d-flex justify-content-end">
+                <button class="btn btn-danger mx-4">Update Course Detail</button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-sections" role="tabpanel" aria-labelledby="nav-sections-tab"
+              tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-navigation" role="tabpanel" aria-labelledby="nav-navigation-tab"
+              tabindex="0">
+              <div class="container-fluid">
+                <div class="my-4 fs-6">Drag and drop items to render them in the course navigation</div>
+                <div class="w-50">
+                  <ul class="list-group">
+                    <li class="list-group-item">Home</li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Modules</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Piazza</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Zoom Meetings</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Assignments</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Quizzes</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Grades</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>People</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Panopto Video</span><i class="fa-solid fa-ellipsis-vertical"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-4 fs-6">Drag items here to hidden them form students</div>
+                <p style="font-size: 14px;" class="w-50">Disabling most pages will cause student who visit those pages
+                  to be redirected to the courses home page</p>
+                <div class="w-50">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Chat</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>SCORM</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Attendance</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Barnes and Noble Bookstore</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Digication</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Top Hat</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Syllabus</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Perusall</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Microsoft Teams Meetings</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Fact Reporting and Photo Roster</h5><i class="ms-3">Pages disabled wont appear in
+                          navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Progress Reports (Navigate)</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Microsoft Teams for Canvas</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>VHL Central</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Gradescope 1.3</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>Credentials</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <div>
+                        <h5>iClicker</h5><i class="ms-3">Pages disabled wont appear in navigation</i>
+                      </div>
+                      <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex justify-content-start my-3">
+                  <button class="btn btn-danger">Save</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-app" role="tabpanel" aria-labelledby="nav-app-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-feature" role="tabpanel" aria-labelledby="nav-feature-tab" tabindex="0">
+              ...</div>
+            <div class="tab-pane fade" id="nav-integrations" role="tabpanel" aria-labelledby="nav-integrations-tab"
+              tabindex="0">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
