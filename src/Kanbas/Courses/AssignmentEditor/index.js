@@ -11,6 +11,14 @@ function AssignmentEditor() {
   }
   return (
     <div className="container-fluid">
+    <div className="container-fluid mt-2 d-flex justify-content-end">
+    <button style={{ backgroundColor: 'green', color: 'white' }} className="btn">
+      <i className="fa-solid fa-circle-check mx-2"></i>Published
+    </button>
+    <button className="btn btn-light">
+      <i className="fa-solid fa-ellipsis-vertical"></i>
+    </button>
+  </div>
       <div className="mb-3">
         <label className="form-label">Assignment Name</label>
         <input className="form-control" value={assignment.title}></input>
