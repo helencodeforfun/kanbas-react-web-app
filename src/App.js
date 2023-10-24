@@ -1,29 +1,32 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-
+import Labs from "./Labs";
+import HelloWorld from './Labs/a3/HelloWorld';
 import Kanbas from './Kanbas';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import { Routes, Route,  Navigate } from 'react-router';
+import PathParamters from './Labs/a3/PathParameters';
+
 
 function App() {
   return (
-    <Routes className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Route path='/' element={<Navigate to={"Kanbas"}/>}></Route>
-      <Route path='Kanbas/*' Component={Kanbas}></Route>
-    </Routes>
+ 
+    <HashRouter>
+    <div>
+      <Routes>
+
+        {/* <Route path='/' element={<Navigate to="/Labs/"/>}/> */}
+        <Route index element={ <Labs/>}/>
+        <Route path='/hello' element={<HelloWorld/>}/>
+        <Route path='/kanbas/*' element={<Kanbas/>}/>
+        <Route path='/Labs/*' element={<Labs />}/>
+
+
+
+      </Routes>
+    </div>
+    </HashRouter>
   );
 }
 
