@@ -1,5 +1,4 @@
 import React from "react"
-import db from "../database"
 import { useParams, Routes, Navigate, Route, Link, useLocation } from "react-router-dom"
 import CoursesNavigation from "./CoursesNavigation"
 import Modules from "./Modules"
@@ -7,10 +6,10 @@ import CoursesHome from "./CoursesHome"
 import Assignments from "./Assignments"
 import AssignmentEditor from "./AssignmentEditor"
 import Grades from "./Grades"
-function Courses() {
+function Courses({courses}) {
   const { courseId } = useParams()
   const { pathname } = useLocation()
-  const course = db.courses.find(course => course._id === courseId)
+  const course = courses.find(course => course._id === courseId)
   return (
     <div className="container-fluid">
       <div className="d-flex my-2 text-align-center">

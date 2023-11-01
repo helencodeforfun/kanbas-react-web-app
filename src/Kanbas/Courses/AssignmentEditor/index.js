@@ -1,12 +1,23 @@
 import React from "react";
 import db from "../../database"
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addAssignment,deleteAssignment,updateAssignment,setAssignment } from "../Assignments/assignmentsReducer";
 function AssignmentEditor() {
   const { assignmentId } = useParams()
+  console.log(assignmentId)
   const navigate = useNavigate()
-  const assignment = db.assignments.find((a) => a._id === assignmentId)
+  const dispatch = useDispatch()
+  const assignment = useSelector((state) => state.assignmentsReducer.assignment)
   const handleSave = ()=>{
     console.log("saved")
+    if (assignmentId === "new") {
+      console.log("add")
+      dispatch(addAssignment({...assignment,_id:new Date().getTime().toString()}))
+    } else {
+      console.log("update")
+      dispatch(updateAssignment(assignment))
+    }
     navigate(`/Kanbas/Courses/${assignment.course}/Assignments`)
   }
   return (
@@ -21,7 +32,28 @@ function AssignmentEditor() {
   </div>
       <div className="mb-3">
         <label className="form-label">Assignment Name</label>
-        <input className="form-control" value={assignment.title}></input>
+        <input className="form-control" value={assignment.title} onChange={
+          (e) => dispatch(setAssignment({...assignment,title:e.target.value}))}></input>
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Assignment Description</label>
+        <textarea className="form-control" value={assignment.description} onChange={
+          (e) => dispatch(setAssignment({...assignment, description: e.target.value}))}></textarea>
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Due Date</label>
+        <input className="form-control" type="date" value={assignment.dueDate} onChange={
+          (e) => dispatch(setAssignment({...assignment, dueDate: e.target.value}))}></input>
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Available From Date</label>
+        <input className="form-control" type="date" value={assignment.availableFromDate} onChange={
+          (e)=> dispatch(setAssignment({...assignment,availableFromDate:e.target.value}))}></input>
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Available until Date</label>
+        <input className="form-control" type="date" value={assignment.availableUntilDate} onChange={
+          (e)=>dispatch(setAssignment({...assignment,availableUntilDate:e.target.value}))}></input>
       </div>
       <hr/>
       <div className="d-flex p-2 justify-content-end">
