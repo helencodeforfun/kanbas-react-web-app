@@ -44,8 +44,8 @@ function Kanbas() {
   const [course, setCourse] = useState({
     name: "New Course",
     number: "New number",
-    startDate: "start Date",
-    endDate: "end date",
+    startDate: "2023-01-01",
+    endDate: "2023-01-01",
   });
   const addNewCourse = () => {
     setCourses([...courses, { ...course, _id: new Date().getTime() }]);
