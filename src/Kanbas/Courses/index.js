@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { useParams, Routes, Navigate, Route } from "react-router"
 import {Link, useLocation} from "react-router-dom";
 import CoursesNavigation from "./CoursesNavigation"
@@ -8,10 +8,19 @@ import Assignments from "./Assignments"
 import AssignmentEditor from "./AssignmentEditor"
 import Grades from "./Grades"
 import { dom } from "aria-query"
+import axios from "axios";
 function Courses({courses}) {
+  const URL = "http://localhost:4000/api/courses"
   const { courseId } = useParams()
   const { pathname } = useLocation()
-  const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({})
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`)
+    setCourse(response.data)
+  }
+  useEffect(() => {
+    findCourseById(courseId)
+  },[courseId])
   const path = pathname.split('/');
   console.log(course, "here");
   

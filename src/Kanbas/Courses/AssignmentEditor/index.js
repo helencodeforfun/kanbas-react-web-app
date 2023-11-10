@@ -3,8 +3,9 @@ import db from "../../database"
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addAssignment,deleteAssignment,updateAssignment,setAssignment } from "../Assignments/assignmentsReducer";
+import { addAssignmentForCourse, updateAssignmentsForCourse } from "../Assignments/clients";
 function AssignmentEditor() {
-  const { assignmentId } = useParams()
+  const { assignmentId,courseId } = useParams()
   console.log(assignmentId)
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -13,10 +14,10 @@ function AssignmentEditor() {
     console.log("saved")
     if (assignmentId === "new") {
       console.log("add")
-      dispatch(addAssignment({...assignment,_id:new Date().getTime().toString()}))
+      addAssignmentForCourse(courseId,assignment).then((assignment) => {dispatch(addAssignment(assignment))})
     } else {
       console.log("update")
-      dispatch(updateAssignment(assignment))
+      updateAssignmentsForCourse(assignment).then(status => dispatch(updateAssignment(assignment)))
     }
     navigate(`/Kanbas/Courses/${assignment.course}/Assignments`)
   }

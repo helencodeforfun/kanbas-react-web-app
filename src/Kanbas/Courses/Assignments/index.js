@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import db from "../../database"
 import { useDispatch, useSelector } from "react-redux";
@@ -6,14 +6,21 @@ import {
   addAssignment,
   deleteAssignment,
   updateAssignment,
-  setAssignment
+  setAssignment,
+  setAssignments
 } from "./assignmentsReducer"
+import { addAssignmentForCourse, deleteAssignmentsForCourse, findAssignmentsForCourse } from "./clients";
 
 function Assignments() {
   const { courseId } = useParams();
   const assignments = useSelector((state) => state.assignmentsReducer.assignments)
   const assignment = useSelector((state) => state.assignmentsReducer.assignment)
-  const courseAssngnments = assignments.filter((assignment) => assignment.course === courseId);
+  useEffect(() => {
+    findAssignmentsForCourse(courseId).then((assignments) => dispatch(setAssignments(assignments)))
+  },[courseId])
+  const handleDeleteAssignment = (assignmentId) => {
+    deleteAssignmentsForCourse(assignmentId).then((status) => dispatch(deleteAssignment(assignmentId)))
+  }
   const dispatch = useDispatch()
 
   return (
@@ -31,7 +38,7 @@ function Assignments() {
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" className="btn btn-danger" onClick={() => dispatch(deleteAssignment(assignment._id))} data-bs-dismiss="modal">Confirm</button>
+              <button type="button" className="btn btn-danger" onClick={() => handleDeleteAssignment(assignment._id)} data-bs-dismiss="modal">Confirm</button>
             </div>
           </div>
         </div>
@@ -73,7 +80,7 @@ function Assignments() {
           </div>
         </li>
         {
-          courseAssngnments.map((assignment) => (
+          assignments.map((assignment) => (
             <li key={assignment._id} className="list-group-item d-flex py-3 justify-content-between">
               <div className="d-flex">
                 <i className="fa-solid mt-3 fa-grip-vertical text-secondary"></i>
