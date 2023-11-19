@@ -10,7 +10,8 @@ import Grades from "./Grades"
 import { dom } from "aria-query"
 import axios from "axios";
 function Courses({courses}) {
-  const URL = "http://localhost:4000/api/courses"
+  // const URL = "http://localhost:4000/api/courses"
+  const URL = "https://kanbas-node-server-app-2bqh.onrender.com/api/courses"
   const { courseId } = useParams()
   const { pathname } = useLocation()
   const [course, setCourse] = useState({})

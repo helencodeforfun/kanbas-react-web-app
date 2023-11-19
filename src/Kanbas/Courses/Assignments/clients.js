@@ -1,6 +1,7 @@
 import axios from "axios"
 
-const URL = "http://localhost:4000/api/courses"
+// const URL = "http://localhost:4000/api/courses"
+const URL = "https://kanbas-node-server-app-2bqh.onrender.com/api/courses"
 export const findAssignmentsForCourse = async (courseId) => {
   const response = await axios.get(`${URL}/${courseId}/assignments`)
   return response.data
@@ -10,7 +11,8 @@ export const addAssignmentForCourse = async (courseId,assignment) => {
   return response.data
 }
 
-const A_URL = "http://localhost:4000/api/assignments"
+// const A_URL = "http://localhost:4000/api/assignments"
+const A_URL = "https://kanbas-node-server-app-2bqh.onrender.com/api/courses"
 export const deleteAssignmentsForCourse = async (assignmentId) => {
   const response = await axios.delete(`${A_URL}/${assignmentId}`)
   return response.data

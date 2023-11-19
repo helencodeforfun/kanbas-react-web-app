@@ -1,6 +1,11 @@
 import axios from "axios"
 
-const URL = "http://localhost:4000/api/courses"
+// const URL = "http://localhost:4000/api/courses"
+const URL = "https://kanbas-node-server-app-2bqh.onrender.com/api/courses"
+
+// const MODULE_URL = "http://localhost:4000/api/modules"
+const MODULE_URL = "https://kanbas-node-server-app-2bqh.onrender.com/api/modules"
+
 export const findModuleForCourse = async (courseId) => {
   const response = await axios.get(`${URL}/${courseId}/modules`)
   return response.data
@@ -11,7 +16,6 @@ export const createModule = async (courseId,module) => {
   return response.data
 }
 
-const MODULE_URL = "http://localhost:4000/api/modules"
 export const deleteModule = async (moduleId) => {
   const response = await axios.delete(`${MODULE_URL}/${moduleId}`)
   return response.data

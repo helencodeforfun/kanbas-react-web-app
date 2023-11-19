@@ -1,3 +1,4 @@
+import "dotenv/config.js";
 import express from 'express';
 import Hello from "./hello.js"
 import Lab5 from "./lab5.js";
@@ -15,4 +16,4 @@ createRoutes(app)
 moduleRoutes(app)
 assignmentRoutes(app)
 app.use(express.json());
-app.listen(4000);
+app.listen( process.env.PORT || 4000);
