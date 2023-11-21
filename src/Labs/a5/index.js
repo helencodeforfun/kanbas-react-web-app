@@ -1,5 +1,8 @@
 import React from "react";
 import EncodingParametersInURLs from "./EncodingParametersInURLs";
+// import WorkingWithObjects from "./WorkingWithObjects";
+// import WorkingWithArrays from "./WorkingWithArrays";
+import WorkingWithArrays from "./WorkingWithArrays";
 import WorkingWithObjects from "./WorkingWithObjects";
 
 function Assignment5() {
@@ -15,6 +18,7 @@ function Assignment5() {
         <h1>SimpleAPIExamples</h1>
         <EncodingParametersInURLs />
         <WorkingWithObjects />
+        <WorkingWithArrays/>
       </div>
     );
   }
