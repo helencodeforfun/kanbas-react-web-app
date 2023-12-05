@@ -38,13 +38,13 @@ const sessionOption = {
   }
 }
 // Uncomment while use mongodb atlas cloud
-// if (process.env.NODE_ENV !== 'development') {
-//   sessionOption.proxy = true,
-//   sessionOption.cookie = {
-//     sameSite: "none",
-//     secure: true,
-//   }
-// }
+if (process.env.NODE_ENV !== 'development') {
+  sessionOption.proxy = true,
+  sessionOption.cookie = {
+    sameSite: "none",
+    secure: true,
+  }
+}
 
 app.use(session(sessionOption))
 app.use(express.json())
