@@ -13,7 +13,7 @@ const connectionOption = {
   user: process.env.MONGO_USERNAME,
   pass: process.env.MONGO_PASSWORD,
 }
-const mongo_url = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/kanbas"
+const mongo_url = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/Kanbas"
 mongoose.connect(mongo_url,connectionOption).then(()=> {
   console.log("Connect to database success!");
 }).catch((err) => {
