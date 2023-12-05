@@ -24,8 +24,7 @@ const app = express()
 console.log(process.env)
 app.use(cors({
   credentials: true,
-  origin: "*"
-  // origin: process.env.FRONTEND_URL
+  origin: process.env.FRONTEND_URL
   // origin: "http://localhost:3000"
 }))
 
