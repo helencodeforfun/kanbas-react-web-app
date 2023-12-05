@@ -24,7 +24,8 @@ const app = express()
 console.log(process.env)
 app.use(cors({
   credentials: true,
-  origin: process.env.FRONTEND_URL
+  // origin: process.env.FRONTEND_URL,
+  origin: "https://iridescent-halva-e02760.netlify.app"
   // origin: "http://localhost:3000"
 }))
 
