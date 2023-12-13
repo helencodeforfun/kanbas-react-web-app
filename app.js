@@ -14,7 +14,7 @@ const connectionOption = {
   pass: process.env.MONGO_PASSWORD,
 }
 const mongo_url = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/Kanbas"
-mongoose.connect(mongo_url,connectionOption).then(()=> {
+mongoose.connect(mongo_url, connectionOption).then(() => {
   console.log("Connect to database success!");
 }).catch((err) => {
   console.log("Failed to connect to database:", err)
@@ -25,8 +25,8 @@ console.log(process.env)
 app.use(cors({
   credentials: true,
   // origin: process.env.FRONTEND_URL,
-  origin: "https://iridescent-halva-e02760.netlify.app"
-  // origin: "http://localhost:3000"
+  // origin: "https://iridescent-halva-e02760.netlify.app"
+  origin: "http://localhost:3000"
 }))
 
 const sessionOption = {
@@ -35,16 +35,16 @@ const sessionOption = {
   saveUninitialized: true,
   cookie: {
     // secure: true,
-    maxAge: 1000 * 60 * 60 *24 * 7
+    maxAge: 1000 * 60 * 60 * 24 * 7
   }
 }
 // Uncomment while use mongodb atlas cloud
 if (process.env.NODE_ENV !== 'development') {
   sessionOption.proxy = true,
-  sessionOption.cookie = {
-    sameSite: "none",
-    secure: true,
-  }
+    sessionOption.cookie = {
+      sameSite: "none",
+      secure: true,
+    }
 }
 
 app.use(session(sessionOption))
